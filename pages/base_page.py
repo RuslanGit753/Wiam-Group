@@ -16,3 +16,7 @@ class BasePage:
     def wait_for_url(self, pattern: str, timeout=10) -> None:
         WebDriverWait(self.driver, timeout).until(
             EC.url_contains(pattern))
+
+    def find_all(self, locator, timeout=5):
+            return WebDriverWait(self.driver, timeout).until(
+                EC.visibility_of_any_elements_located(locator))

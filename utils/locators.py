@@ -4,7 +4,7 @@ class MainPageLocators:
         search_button = (By.CSS_SELECTOR, '.btn-primary')
         statistics_button = (By.CSS_SELECTOR, '.btn-outline-secondary')
 
-#query
+
 class SearchPageLocators:
         search = (By.CSS_SELECTOR, '#query')
 
@@ -20,3 +20,5 @@ class SearchPageLocators:
 
         search_button = (By.CSS_SELECTOR, '.btn-danger')
         clear_button = (By.CSS_SELECTOR, '.btn-secondary')
+
+        customers = (By.XPATH, '//div[@class="col-lg-6"]')

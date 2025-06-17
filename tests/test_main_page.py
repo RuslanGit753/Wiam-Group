@@ -9,7 +9,4 @@ def test_activ_button_search(driver):
 def test_activ_button_statistics(driver):
     page = MainPage(driver)
     result = page.activ_button_statistics()
-    assert result == 'http://37.203.243.26:5000/search'
-
-# def open_statistics_page(driver):
-#     page = MainPage(driver)
+    assert result == 'http://37.203.243.26:5000/search' # Так как я не знаю как должна выглядить страница статисти, я добавил страницу поиска
